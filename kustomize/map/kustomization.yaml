@@ -1,4 +1,4 @@
-# namespace: default
+namespace: default
 
 resources:
 - deployment.yaml

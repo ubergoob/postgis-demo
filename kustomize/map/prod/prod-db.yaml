@@ -8,6 +8,6 @@ spec:
     namespace: 'geotest'
     server: 'https://kubernetes.default.svc'
   source:
-    path: overlays/production/prod-large
+    path: overlays/production/production-large
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
   project: geomap-databases

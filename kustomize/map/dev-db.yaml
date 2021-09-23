@@ -10,5 +10,4 @@ spec:
   source:
     path: overlays/development/dev-small
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
-    targetRevision: HEAD
   project: default

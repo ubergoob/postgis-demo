@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: map
+  name: map-stage
   # namespace: default
   labels:
-    app: map
+    app: map-stage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: map
+      app: map-stage
   template:
     metadata:
       labels:
-        app: map
+        app: map-stage
     spec:
       containers:
-      - name: map
+      - name: map-stage
         image: nfickas/openlayers-map:latest
         env:
         - name: TILESERVER

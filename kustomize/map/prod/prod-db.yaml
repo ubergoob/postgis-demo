@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod-large
+  namespace: argocd
+spec:
+  destination:
+    namespace: 'geotest'
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: overlays/development/prod-large
+    repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
+  project: default

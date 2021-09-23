@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: map
+  # namespace: default
+  labels:
+    app: map
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: map
+  template:
+    metadata:
+      labels:
+        app: map
+    spec:
+      containers:
+      - name: map
+        image: nfickas/openlayers-map:latest
+        env:
+        - name: TILESERVER
+          value: "http://tileserv.nate-test.svc:7800/"
+        - name: FEATURESERVER
+          value: "http://featureserv.nate-test.svc:9000"
+        ports:
+        - containerPort: 8080
+        securityContext:
+          runAsNonRoot: false

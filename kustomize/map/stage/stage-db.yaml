@@ -10,4 +10,4 @@ spec:
   source:
     path: overlays/development/stage-medium
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
-  project: default
+  project: geomap-databases

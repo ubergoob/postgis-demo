@@ -1,5 +1,6 @@
 # namespace: default
 
 resources:
+- service.yaml
 - dev-db.yaml
 - deployment.yaml

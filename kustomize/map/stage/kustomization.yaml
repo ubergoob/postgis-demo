@@ -1,5 +1,6 @@
 # namespace: default
 
 resources:
+- service.yaml
 - stage-db.yaml
 - deployment.yaml

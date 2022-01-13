@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: map-dev
   name: map-dev
 spec:
   selector:

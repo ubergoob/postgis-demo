@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: map-dev
   name: map-dev
   # namespace: default
   labels:

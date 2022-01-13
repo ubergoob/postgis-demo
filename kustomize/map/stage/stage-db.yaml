@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: 'geotest'
+    namespace: 'map-stage'
     server: 'https://kubernetes.default.svc'
   source:
     path: overlays/staging/staging-medium
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
-  project: geomap-databases
+  project: crunchydata-postgres-operator

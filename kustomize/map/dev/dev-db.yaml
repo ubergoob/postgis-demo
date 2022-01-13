@@ -12,4 +12,6 @@ spec:
     path: overlays/development/dev-small
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
   project: crunchydata-postgres-operator
+  syncPolicy:
+    automated: {}
 

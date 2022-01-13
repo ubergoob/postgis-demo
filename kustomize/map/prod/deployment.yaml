@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: map-prod
-  # namespace: default
+  namespace: map-prod
   labels:
     app: map-prod
 spec:

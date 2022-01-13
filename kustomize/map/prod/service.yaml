@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: map-prod
+  name: map-prod
+spec:
+  selector:
+    app: map-prod
+  ports:
+    - protocol: TCP
+      port: 3000

@@ -4,3 +4,4 @@ resources:
 - service.yaml
 - prod-db.yaml
 - deployment.yaml
+- config.yaml

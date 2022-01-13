@@ -3,6 +3,7 @@ kind: Application
 metadata:
   name: dev-small
   namespace: argocd
+  finalizers: ["resources-finalizer.argocd.argoproj.io"]
 spec:
   destination:
     namespace: 'map-dev'

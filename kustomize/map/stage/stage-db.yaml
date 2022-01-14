@@ -3,6 +3,7 @@ kind: Application
 metadata:
   name: stage-medium
   namespace: argocd
+  finalizers: ["resources-finalizer.argocd.argoproj.io"]
 spec:
   destination:
     namespace: 'map-stage'
@@ -11,3 +12,5 @@ spec:
     path: overlays/staging/staging-medium
     repoURL: 'https://github.com/CrunchyDemos/pg-clusters-managed.git'
   project: crunchydata-postgres-operator
+  syncPolicy:
+    automated: {}
